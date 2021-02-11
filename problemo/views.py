@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+
+
+
 # Create your views here.
 from django.template import loader
 from django.shortcuts import render
@@ -35,3 +38,6 @@ def calculate(request):
     c = {'tit': b}
     temp = loader.get_template('calculate.html')
     return HttpResponse(temp.render(c, request))
+
+    
+     
