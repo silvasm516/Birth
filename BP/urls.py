@@ -20,6 +20,6 @@ from problemo.views import wrapit
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index', calculate, name ='calculate'),
+    path('/', calculate, name ='calculate'),
     path('A', wrapit, name = 'wrapit')
 ]
